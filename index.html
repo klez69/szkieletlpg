@@ -121,8 +121,9 @@
             "worstRating": "1"
         },
         "sameAs": [
-            "https://www.facebook.com/lpgbrc",
-            "https://www.instagram.com/lpgbrc"
+            "https://www.facebook.com/BRCPolska",
+            "https://www.instagram.com/brcpolska/",
+            "https://www.youtube.com/@CzakramBoschCarService"
         ]
     }
     </script>
@@ -131,7 +132,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==">
     <link rel="apple-touch-icon" href="images/favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <!-- Breadcrumb Navigation for SEO -->
@@ -160,6 +161,17 @@
                     <li><a href="#installations">Instalacje BRC</a></li>
                     <li><a href="#installations .calculator-section">Kalkulator</a></li>
                     <li><a href="#contact">Kontakt</a></li>
+                    <li class="social-icons">
+                        <a href="https://www.facebook.com/BRCPolska" target="_blank" rel="noopener" class="social-glass-icon facebook-glass" aria-label="Facebook BRC Polska">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/brcpolska/" target="_blank" rel="noopener" class="social-glass-icon instagram-glass" aria-label="Instagram BRC Polska">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@CzakramBoschCarService" target="_blank" rel="noopener" class="social-glass-icon youtube-glass" aria-label="YouTube Czakram Bosch Car Service">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
                 </ul>
                 <div class="mobile-controls">
                     <a href="tel:+48146460090" class="mobile-phone">
@@ -547,6 +559,28 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Red Glass Buttons Section -->
+            <div class="red-glass-buttons-section">
+                <div class="red-glass-buttons">
+                    <a href="#galeria" class="btn-red-glass">
+                        <i class="fas fa-images"></i>
+                        <span>Galeria</span>
+                    </a>
+                    <a href="#assistance" class="btn-red-glass">
+                        <i class="fas fa-tools"></i>
+                        <span>Sieć assistance</span>
+                    </a>
+                    <a href="#zaklady" class="btn-red-glass">
+                        <i class="fas fa-industry"></i>
+                        <span>Wszystkie zakłady</span>
+                    </a>
+                    <a href="#gwarancja" class="btn-red-glass">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Gwarancja krajowa</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -559,21 +593,29 @@
                     <div class="contact-item phone-contact">
                         <i class="fas fa-phone"></i>
                         <div class="contact-details">
-                            <span class="contact-label">Zadzwoń i zapytaj o cenę instalacji</span>
+                            <span class="contact-label">Zadzwoń i zapytaj o cenę</span>
                             <a href="tel:+48146460090" class="desktop-phone">14 646 00 90</a>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item address-contact">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Dojazd 1, 33-100 Tarnów - znajdź nas na mapie</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Sprawdź lokalizację</span>
+                            <div class="route-button-inline">
+                                <a href="https://www.google.com/maps/dir//Dojazd+1,+33-100+Tarnów" target="_blank" rel="noopener" class="route-btn-mini">
+                                    <i class="fas fa-route"></i>
+                                    <span>Wyznacz trasę</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>Wyślij zapytanie przez formularz</span>
+                        <span>Wyślij zapytanie online</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>Umów wizytę w dogodnym terminie</span>
+                        <span>Umów wizytę i doradztwo</span>
                     </div>
                 </div>
             </div>
@@ -606,23 +648,29 @@
             <div class="contact-map">
                 <h3>Nasza lokalizacja</h3>
                 <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.8674!2d20.9855!3d50.0134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dcbf23e8b7c1d%3A0x7c5f4b3d2e1f6a8b!2sDojazd%201%2C%2033-100%20Tarn%C3%B3w!5e0!3m2!1spl!2spl!4v1673000000000!5m2!1spl!2spl"
-                        width="100%" 
-                        height="300" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Mapa lokalizacji LPG-BRC w Tarnowie"
-                        aria-label="Interaktywna mapa Google pokazująca lokalizację LPG-BRC przy ulicy Dojazd 1 w Tarnowie">
-                    </iframe>
+                    <!-- Statyczna mapa zastępująca iframe -->
+                    <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); height: 300px; border-radius: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 12px; backdrop-filter: blur(10px);">
+                            <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem; color: #fbbf24;"></i>
+                            <h4 style="margin: 0 0 0.5rem 0; font-size: 1.5rem;">📍 Nasza lokalizacja</h4>
+                            <p style="margin: 0 0 1.5rem 0; opacity: 0.9;">Dojazd 1, 33-100 Tarnów</p>
+                            <a href="https://www.google.com/maps/place/Dojazd+1,+33-100+Tarnów" target="_blank" rel="noopener" style="display: inline-block; background: #fbbf24; color: #1f2937; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: transform 0.2s;">
+                                <i class="fas fa-external-link-alt"></i> Otwórz w Google Maps
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <p class="map-description">
                     📍 <strong>Dojazd 1, 33-100 Tarnów</strong><br>
                     Zapraszamy do naszego autoryzowanego punktu montażowego. 
                     Profesjonalny montaż instalacji LPG z gwarancją.
                 </p>
+                <div class="route-button-container">
+                    <a href="https://www.google.com/maps/dir//Dojazd+1,+33-100+Tarnów" target="_blank" rel="noopener" class="route-btn">
+                        <i class="fas fa-route"></i>
+                        <span>Wyznacz trasę</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
