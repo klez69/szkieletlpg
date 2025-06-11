@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow crawling of any potential admin or private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /temp/
+Disallow: /cache/
+
+# Crawl delay for politeness (optional)
+Crawl-delay: 1
+
+# Sitemap location - update with your actual domain
+Sitemap: https://lpg-brc.pl/sitemap.xml
+
+# Additional information
+# Website: LPG-BRC - Lider Instalacji Gazowych
+# Contact: +48 14 646 00 90 
